@@ -1,0 +1,44 @@
+schema_version: '1.0'
+topic: Does avoiding per-line token arrays improve a correct log parser?
+targets: [rust, go, java, csharp]
+experiment_type: throughput
+output_slug: log-parser-rematch-2026
+comparison_format: phased
+phases: [within_language_split_vs_scan, cross_language_diagnostic]
+status: planned
+app_spec: CONTRACT.md
+primary_metric: resident_input_parse_and_aggregate_lines_per_second
+resource_envelope:
+  environment: local_native_macos_pilot
+  application_parse_threads: 1
+  cpu_limit: null
+  memory_limit: null
+  note: No hard isolation; not a production/container benchmark. Runtime background threads allowed.
+workload:
+  seed: 20261113
+  lines_per_corpus: 200000
+  corpora: [clean, noisy]
+  input: resident_utf8_ascii_grammar
+  exclude_from_timed_pass: [file_read, output_serialization]
+measurement:
+  fresh_process_trials: 5
+  same_process_warmup_passes: 5
+  timed_passes_per_process: 3
+  trial_statistic: median_of_three_timed_passes
+  reported_statistic: median_of_five_trial_medians
+  order: balanced_rotation_with_variant_pair_reversal
+  idle_between_processes_seconds: 0.25
+  peak_rss: process_lifetime_diagnostic_only
+success_gate:
+  correctness: exact_python_oracle_match_for_every_pass
+  minimum_valid_trials: 5
+  golden_fixture: required
+  malformed_line_agreement: required
+  raw_evidence: required
+  publishable_production_verdict: false
+limitations:
+  - shape_only_timestamp_validation
+  - no_percentiles_routes_or_anomaly_detection
+  - resident_corpus_not_disk_or_network_throughput
+  - no_guaranteed_JIT_steady_state
+  - no_historical_speedup_against_old_demo_numbers

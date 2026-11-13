@@ -1,0 +1,14 @@
+{
+  "lines": 2,
+  "valid": 2,
+  "invalid": 0,
+  "latency_sum": 84,
+  "errors": 1,
+  "services": {
+    "api": {
+      "count": 2,
+      "errors": 1,
+      "latency_sum": 84
+    }
+  }
+}

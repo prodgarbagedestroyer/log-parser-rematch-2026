@@ -1,0 +1,93 @@
+{
+  "run_group": "20261113T025336Z-e268b819",
+  "claims": {
+    "clean-rust": {
+      "split": 5998822.731039033,
+      "scan": 9249054.041436594,
+      "ratio": 1.5418115280487044,
+      "throughput_change_pct": 54.181152804870436,
+      "evidence_ids": [
+        "rust-split-clean-throughput",
+        "rust-scan-clean-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    },
+    "clean-go": {
+      "split": 4713284.982884884,
+      "scan": 4020571.89941486,
+      "ratio": 0.8530296627542281,
+      "throughput_change_pct": -14.69703372457719,
+      "evidence_ids": [
+        "go-split-clean-throughput",
+        "go-scan-clean-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    },
+    "clean-java": {
+      "split": 3135373.6777541316,
+      "scan": 7970151.78157799,
+      "ratio": 2.5420101719062114,
+      "throughput_change_pct": 154.20101719062114,
+      "evidence_ids": [
+        "java-split-clean-throughput",
+        "java-scan-clean-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    },
+    "clean-csharp": {
+      "split": 6601270.084364232,
+      "scan": 8402655.239055542,
+      "ratio": 1.2728846315435678,
+      "throughput_change_pct": 27.28846315435678,
+      "evidence_ids": [
+        "csharp-split-clean-throughput",
+        "csharp-scan-clean-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    },
+    "noisy-rust": {
+      "split": 6265189.756778128,
+      "scan": 9404351.863824986,
+      "ratio": 1.501048209058742,
+      "throughput_change_pct": 50.104820905874206,
+      "evidence_ids": [
+        "rust-split-noisy-throughput",
+        "rust-scan-noisy-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    },
+    "noisy-go": {
+      "split": 4851704.616093711,
+      "scan": 4128847.541416831,
+      "ratio": 0.8510096694099899,
+      "throughput_change_pct": -14.89903305900101,
+      "evidence_ids": [
+        "go-split-noisy-throughput",
+        "go-scan-noisy-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    },
+    "noisy-java": {
+      "split": 2903646.11859388,
+      "scan": 7747371.2394647375,
+      "ratio": 2.6681527028563936,
+      "throughput_change_pct": 166.81527028563937,
+      "evidence_ids": [
+        "java-split-noisy-throughput",
+        "java-scan-noisy-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    },
+    "noisy-csharp": {
+      "split": 6848681.79997055,
+      "scan": 8230012.386168641,
+      "ratio": 1.201692913547835,
+      "throughput_change_pct": 20.169291354783493,
+      "evidence_ids": [
+        "csharp-split-noisy-throughput",
+        "csharp-scan-noisy-throughput"
+      ],
+      "formula": "scan median lines/s / split median lines/s; percent=(ratio-1)*100"
+    }
+  }
+}

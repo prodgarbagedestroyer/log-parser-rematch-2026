@@ -1,0 +1,65 @@
+{
+  "targets": [
+    {
+      "name": "rust",
+      "command": [
+        "rustc",
+        "-O",
+        "--edition=2021",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/implementations/rust/main.rs",
+        "-o",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust"
+      ],
+      "exit_code": 0,
+      "duration_ms": 204.857707984047,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "go",
+      "command": [
+        "go",
+        "build",
+        "-trimpath",
+        "-o",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/implementations/go/main.go"
+      ],
+      "exit_code": 0,
+      "duration_ms": 39.41391600528732,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "java",
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/javac",
+        "-d",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/implementations/java/Main.java"
+      ],
+      "exit_code": 0,
+      "duration_ms": 248.4453330107499,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "csharp",
+      "command": [
+        "dotnet",
+        "build",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/implementations/csharp/Parser.csproj",
+        "-c",
+        "Release",
+        "-o",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp",
+        "--ignore-failed-sources",
+        "-p:NuGetAudit=false"
+      ],
+      "exit_code": 0,
+      "duration_ms": 21054.770249989815,
+      "stdout": "  Determining projects to restore...\n  All projects are up-to-date for restore.\n  Parser -> /Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:20.97\n",
+      "stderr": "CSSM_ModuleLoad(): One or more parameters passed to a function were not valid.\n"
+    }
+  ]
+}

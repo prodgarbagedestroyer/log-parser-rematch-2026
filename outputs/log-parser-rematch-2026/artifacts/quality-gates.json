@@ -1,0 +1,25 @@
+{
+  "run_group": "20261113T025336Z-e268b819",
+  "local_pilot_integrity_passed": true,
+  "evidence_ready_for_scoped_local_pilot_story": true,
+  "production_verdict_valid": false,
+  "full_replay_contract_passed": false,
+  "full_replay_contract_note": "Generic experiment-runner validator fails: this batch pilot lacks canonical replay streams, live-preview datasets, top-level environment/actions receipt and a final verdict. The local validator verifies the narrower raw batch evidence only.",
+  "contract_tests": 64,
+  "fresh_process_trials": 80,
+  "timed_passes": 240,
+  "raw_hashes_verified": 254,
+  "publication_ready": false,
+  "limitations": [
+    "native host without hard resource isolation or thermal monitoring",
+    "shape-only timestamp validation, scoped aggregation kernel",
+    "no cross-runtime allocation profiles or demonstrated JIT convergence",
+    "not a reproduction of the original app or its demonstration figures"
+  ],
+  "prior_attempts": [
+    {
+      "run_group": "20261113T025259Z-17882574",
+      "disposition": "retained, excluded from latest pilot"
+    }
+  ]
+}

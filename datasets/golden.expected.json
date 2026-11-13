@@ -1,0 +1,19 @@
+{
+  "lines": 35,
+  "valid": 13,
+  "invalid": 22,
+  "latency_sum": 2000377,
+  "errors": 1,
+  "services": {
+    "api": {
+      "count": 12,
+      "errors": 1,
+      "latency_sum": 2000335
+    },
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+      "count": 1,
+      "errors": 0,
+      "latency_sum": 42
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "run_id": "csharp-split-clean-r1",
+  "target": "csharp",
+  "variant": "split",
+  "corpus": "clean",
+  "trial": 1,
+  "ts_utc": "2026-11-13T02:53:41.093900+00:00",
+  "command": [
+    "/opt/homebrew/bin/dotnet",
+    "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+    "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+    "split",
+    "5",
+    "3"
+  ],
+  "exit_code": 0,
+  "process_elapsed_ms": 564.3577080045361,
+  "peak_rss_bytes": 101335040,
+  "correctness": true,
+  "rows": [
+    {
+      "pass": 0,
+      "elapsed_ns": 30357000,
+      "result": {
+        "lines": 200000,
+        "valid": 200000,
+        "invalid": 0,
+        "latency_sum": 1001956218,
+        "errors": 19755,
+        "services": {
+          "users": {
+            "count": 24927,
+            "errors": 2441,
+            "latency_sum": 124270232
+          },
+          "gateway": {
+            "count": 24864,
+            "errors": 2460,
+            "latency_sum": 124358439
+          },
+          "notify": {
+            "count": 24996,
+            "errors": 2422,
+            "latency_sum": 126044187
+          },
+          "billing": {
+            "count": 25336,
+            "errors": 2432,
+            "latency_sum": 126303665
+          },
+          "auth": {
+            "count": 24877,
+            "errors": 2397,
+            "latency_sum": 124471793
+          },
+          "search": {
+            "count": 24991,
+            "errors": 2520,
+            "latency_sum": 125651721
+          },
+          "api": {
+            "count": 24765,
+            "errors": 2538,
+            "latency_sum": 123958001
+          },
+          "worker": {
+            "count": 25244,
+            "errors": 2545,
+            "latency_sum": 126898180
+          }
+        }
+      }
+    },
+    {
+      "pass": 1,
+      "elapsed_ns": 30551000,
+      "result": {
+        "lines": 200000,
+        "valid": 200000,
+        "invalid": 0,
+        "latency_sum": 1001956218,
+        "errors": 19755,
+        "services": {
+          "users": {
+            "count": 24927,
+            "errors": 2441,
+            "latency_sum": 124270232
+          },
+          "gateway": {
+            "count": 24864,
+            "errors": 2460,
+            "latency_sum": 124358439
+          },
+          "notify": {
+            "count": 24996,
+            "errors": 2422,
+            "latency_sum": 126044187
+          },
+          "billing": {
+            "count": 25336,
+            "errors": 2432,
+            "latency_sum": 126303665
+          },
+          "auth": {
+            "count": 24877,
+            "errors": 2397,
+            "latency_sum": 124471793
+          },
+          "search": {
+            "count": 24991,
+            "errors": 2520,
+            "latency_sum": 125651721
+          },
+          "api": {
+            "count": 24765,
+            "errors": 2538,
+            "latency_sum": 123958001
+          },
+          "worker": {
+            "count": 25244,
+            "errors": 2545,
+            "latency_sum": 126898180
+          }
+        }
+      }
+    },
+    {
+      "pass": 2,
+      "elapsed_ns": 30445200,
+      "result": {
+        "lines": 200000,
+        "valid": 200000,
+        "invalid": 0,
+        "latency_sum": 1001956218,
+        "errors": 19755,
+        "services": {
+          "users": {
+            "count": 24927,
+            "errors": 2441,
+            "latency_sum": 124270232
+          },
+          "gateway": {
+            "count": 24864,
+            "errors": 2460,
+            "latency_sum": 124358439
+          },
+          "notify": {
+            "count": 24996,
+            "errors": 2422,
+            "latency_sum": 126044187
+          },
+          "billing": {
+            "count": 25336,
+            "errors": 2432,
+            "latency_sum": 126303665
+          },
+          "auth": {
+            "count": 24877,
+            "errors": 2397,
+            "latency_sum": 124471793
+          },
+          "search": {
+            "count": 24991,
+            "errors": 2520,
+            "latency_sum": 125651721
+          },
+          "api": {
+            "count": 24765,
+            "errors": 2538,
+            "latency_sum": 123958001
+          },
+          "worker": {
+            "count": 25244,
+            "errors": 2545,
+            "latency_sum": 126898180
+          }
+        }
+      }
+    }
+  ],
+  "median_elapsed_ns": 30445200,
+  "source": "artifacts/raw/20261113T025336Z-e268b819/csharp-split-clean-r1",
+  "run_group": "20261113T025336Z-e268b819",
+  "metadata_sha256": "892802f37ed81d1119b6060b2f01d6785e49d3a05d3bd90cf7adf393c4476c8f",
+  "corpus_sha256": "32b40ab5809572a0145b6dff543e23ba0902736a64664c8de92374a2a0764e27"
+}

@@ -1,0 +1,41 @@
+{
+  "run_group": "20261113T025336Z-e268b819",
+  "scenes": {
+    "paired-bars-clean-rust": [
+      "rust-split-clean-throughput",
+      "rust-scan-clean-throughput"
+    ],
+    "paired-bars-clean-go": [
+      "go-split-clean-throughput",
+      "go-scan-clean-throughput"
+    ],
+    "paired-bars-clean-java": [
+      "java-split-clean-throughput",
+      "java-scan-clean-throughput"
+    ],
+    "paired-bars-clean-csharp": [
+      "csharp-split-clean-throughput",
+      "csharp-scan-clean-throughput"
+    ],
+    "paired-bars-noisy-rust": [
+      "rust-split-noisy-throughput",
+      "rust-scan-noisy-throughput"
+    ],
+    "paired-bars-noisy-go": [
+      "go-split-noisy-throughput",
+      "go-scan-noisy-throughput"
+    ],
+    "paired-bars-noisy-java": [
+      "java-split-noisy-throughput",
+      "java-scan-noisy-throughput"
+    ],
+    "paired-bars-noisy-csharp": [
+      "csharp-split-noisy-throughput",
+      "csharp-scan-noisy-throughput"
+    ],
+    "go-allocation-diagnostic": [
+      "go-clean-allocation-diagnostic"
+    ]
+  },
+  "note": "Editorial plan only. Actual VideoData display keys follow approved audio/composition."
+}

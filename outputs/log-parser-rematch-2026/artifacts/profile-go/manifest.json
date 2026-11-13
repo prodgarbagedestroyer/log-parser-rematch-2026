@@ -1,0 +1,10 @@
+{
+  "measurement_kind": "diagnostic",
+  "files_sha256": {
+    "benchmark-output.txt": "bf7eb446c3c519d5e28c80fb0f32bd23124dfc96f010cc7aa1412e5ff35aa626",
+    "source-hash.txt": "154e52415f1a053ed19dfaa02ff6ec950470fb3e7c43326f6004ede0d66f6495",
+    "diagnostic.json": "5d25188ec38d1c41eb3b4cafdf9125f9388d2f4085727863581a06f545c06f1a",
+    "command.txt": "ac1c8f19263cbaec7ff8951d5bd4d3656c53ef73c29f87fc6281fa2e31fd84c6",
+    "main_test.go": "33430bb82d142e1a2b1bcb7db6490984dd78099c2a5775e450a546f19beaba8e"
+  }
+}

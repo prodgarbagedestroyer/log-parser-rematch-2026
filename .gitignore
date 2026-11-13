@@ -1,0 +1,7 @@
+build/
+datasets/*.log
+implementations/csharp/bin/
+implementations/csharp/obj/
+scripts/__pycache__/
+review/
+.DS_Store

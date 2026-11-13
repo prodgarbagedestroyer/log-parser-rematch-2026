@@ -1,0 +1,117 @@
+{
+  "ts_utc": "2026-11-13T02:53:37.119865+00:00",
+  "probes": {
+    "rustc": {
+      "command": [
+        "rustc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.93.1 (01f6ddf75 2026-02-11)\n",
+      "stderr": ""
+    },
+    "go": {
+      "command": [
+        "go",
+        "version"
+      ],
+      "exit_code": 0,
+      "stdout": "go version go1.27.3 darwin/arm64\n",
+      "stderr": ""
+    },
+    "java": {
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "openjdk 27.0.1.0.3 2026-10-24\nOpenJDK Runtime Environment Homebrew (build 27.0.1.0.3)\nOpenJDK 64-Bit Server VM Homebrew (build 27.0.1.0.3, mixed mode, sharing)\n",
+      "stderr": ""
+    },
+    "dotnet": {
+      "command": [
+        "dotnet",
+        "--info"
+      ],
+      "exit_code": 0,
+      "stdout": ".NET SDK:\n Version:           10.0.403\n Commit:            5a2162bea6\n Workload version:  10.0.400-manifests.a00bebb6\n MSBuild version:   18.9.15+5a2162bea\n\nRuntime Environment:\n OS Name:     Mac OS X\n OS Version:  27.2\n OS Platform: Darwin\n RID:         osx-arm64\n Base Path:   /opt/homebrew/Cellar/dotnet/10.0.403/libexec/sdk/10.0.403/\n\n.NET workloads installed:\nThere are no installed workloads to display.\nConfigured to use workload sets when installing new manifests.\nNo workload sets are installed. Run \"dotnet workload restore\" to install a workload set.\n\nHost:\n  Version:      10.0.14\n  Architecture: arm64\n  Commit:       0427b9abbe\n\n.NET SDKs installed:\n  10.0.403 [/opt/homebrew/Cellar/dotnet/10.0.403/libexec/sdk]\n\n.NET runtimes installed:\n  Microsoft.AspNetCore.App 10.0.14 [/opt/homebrew/Cellar/dotnet/10.0.403/libexec/shared/Microsoft.AspNetCore.App]\n  Microsoft.NETCore.App 10.0.14 [/opt/homebrew/Cellar/dotnet/10.0.403/libexec/shared/Microsoft.NETCore.App]\n\nOther architectures found:\n  None\n\nEnvironment variables:\n  DOTNET_CLI_HOME                          [/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/dotnet-home]\n  DOTNET_CLI_TELEMETRY_OPTOUT              [1]\n  DOTNET_ROOT                              [/opt/homebrew/Cellar/dotnet/10.0.403/libexec]\n  DOTNET_SKIP_FIRST_TIME_EXPERIENCE        [1]\n\nglobal.json file:\n  Not found\n\nLearn more:\n  https://aka.ms/dotnet/info\n\nDownload .NET:\n  https://aka.ms/dotnet/download\n",
+      "stderr": ""
+    },
+    "os": {
+      "command": [
+        "sw_vers"
+      ],
+      "exit_code": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2.1\nBuildVersion:\t\t26B131\n",
+      "stderr": ""
+    },
+    "cpu": {
+      "command": [
+        "sysctl",
+        "-n",
+        "machdep.cpu.brand_string"
+      ],
+      "exit_code": 0,
+      "stdout": "Apple M4\n",
+      "stderr": ""
+    },
+    "memory_bytes": {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.memsize"
+      ],
+      "exit_code": 0,
+      "stdout": "25769803776\n",
+      "stderr": ""
+    },
+    "architecture": {
+      "command": [
+        "uname",
+        "-m"
+      ],
+      "exit_code": 0,
+      "stdout": "arm64\n",
+      "stderr": ""
+    },
+    "power": {
+      "command": [
+        "pmset",
+        "-g",
+        "batt"
+      ],
+      "exit_code": 0,
+      "stdout": "Now drawing from 'AC Power'\n",
+      "stderr": ""
+    },
+    "git_commit": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "48e3459f571ccf43c390a1a0a10d903e8a229765\n",
+      "stderr": ""
+    }
+  },
+  "python": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sources_sha256": {
+    "implementations/rust/main.rs": "1bf5d22e331882c433112e8b9506b0daba71cf427fd47bc321427e62b64a58c3",
+    "implementations/go/main.go": "aecf08c4cdf1b57390ff8399bb21b19323ee7183e6a9a880a5e5922e05226f4b",
+    "implementations/java/Main.java": "4d7c90c94707a4687a8acdf06aa549a37bda04d291a9a6849932047921d36993",
+    "implementations/csharp/Program.cs": "0debbd5f776f8f724bbd1242ab5e7ad040cf2e6472cc902ce08cc0b58a895b44",
+    "implementations/csharp/Parser.csproj": "74930c6389741178d666d052d608228687b22e7a0a9003916c16a8e0c2b1037d",
+    "CONTRACT.md": "3aed24ac4eb1806dc74eca0c9822c6e0938c20f65a85e74fd70014bbfc5a0807",
+    "spec.yaml": "ec52a8cd522190244ae99a4247ae7679d1f91f2194b75931267a7c24bce70549",
+    "scripts/experiment.py": "74535d3d07302f1893e134a7ac34e80fc872d8fe8137f67e531291009d18f893"
+  },
+  "binaries_sha256": {
+    "build/parser-rust": "7f2072a166d5e424c615bc760cd7b66b250fcd8542d33dc9a94ef82bfa37ea07",
+    "build/parser-go": "8d8840631bcd1944af14f34cab703431648046a7569f2f148ce83159b714bc03",
+    "build/java/Main.class": "378406e2e29da1510418fd8122d86714d0410f99bd4699413cd7b39a86563208",
+    "build/csharp/Parser.dll": "61a4e8f01ebb49029f75ae33c20baf7cad3ef52e92f934e402857bbecc7f8eb6"
+  },
+  "dataset_manifest_sha256": "7fe7e2018763027c2ead1a04716a51f3d7d61015b2b1c7582236c0ba2d7d1915",
+  "note": "Native macOS pilot, no CPU or memory hard limits; background load and thermals not controlled."
+}

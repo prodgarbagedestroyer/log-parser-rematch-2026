@@ -1,0 +1,200 @@
+{
+  "run_id": "rust-scan-noisy-r1",
+  "target": "rust",
+  "variant": "scan",
+  "corpus": "noisy",
+  "trial": 1,
+  "ts_utc": "2026-11-13T02:53:43.209736+00:00",
+  "command": [
+    "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+    "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+    "scan",
+    "5",
+    "3"
+  ],
+  "exit_code": 0,
+  "process_elapsed_ms": 218.2209999882616,
+  "peak_rss_bytes": 17907712,
+  "correctness": true,
+  "rows": [
+    {
+      "pass": 0,
+      "elapsed_ns": 21525750,
+      "result": {
+        "lines": 200000,
+        "valid": 193713,
+        "invalid": 6287,
+        "latency_sum": 1521020529,
+        "errors": 19191,
+        "services": {
+          "notify": {
+            "count": 24087,
+            "errors": 2388,
+            "latency_sum": 120188490
+          },
+          "api": {
+            "count": 27224,
+            "errors": 2729,
+            "latency_sum": 689615516
+          },
+          "gateway": {
+            "count": 23667,
+            "errors": 2333,
+            "latency_sum": 118430711
+          },
+          "worker": {
+            "count": 23623,
+            "errors": 2310,
+            "latency_sum": 118226073
+          },
+          "billing": {
+            "count": 23610,
+            "errors": 2371,
+            "latency_sum": 118015534
+          },
+          "auth": {
+            "count": 23879,
+            "errors": 2370,
+            "latency_sum": 119465779
+          },
+          "users": {
+            "count": 23604,
+            "errors": 2292,
+            "latency_sum": 118336668
+          },
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+            "count": 286,
+            "errors": 0,
+            "latency_sum": 12012
+          },
+          "search": {
+            "count": 23733,
+            "errors": 2398,
+            "latency_sum": 118729746
+          }
+        }
+      }
+    },
+    {
+      "pass": 1,
+      "elapsed_ns": 21451666,
+      "result": {
+        "lines": 200000,
+        "valid": 193713,
+        "invalid": 6287,
+        "latency_sum": 1521020529,
+        "errors": 19191,
+        "services": {
+          "api": {
+            "count": 27224,
+            "errors": 2729,
+            "latency_sum": 689615516
+          },
+          "users": {
+            "count": 23604,
+            "errors": 2292,
+            "latency_sum": 118336668
+          },
+          "notify": {
+            "count": 24087,
+            "errors": 2388,
+            "latency_sum": 120188490
+          },
+          "billing": {
+            "count": 23610,
+            "errors": 2371,
+            "latency_sum": 118015534
+          },
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+            "count": 286,
+            "errors": 0,
+            "latency_sum": 12012
+          },
+          "auth": {
+            "count": 23879,
+            "errors": 2370,
+            "latency_sum": 119465779
+          },
+          "search": {
+            "count": 23733,
+            "errors": 2398,
+            "latency_sum": 118729746
+          },
+          "worker": {
+            "count": 23623,
+            "errors": 2310,
+            "latency_sum": 118226073
+          },
+          "gateway": {
+            "count": 23667,
+            "errors": 2333,
+            "latency_sum": 118430711
+          }
+        }
+      }
+    },
+    {
+      "pass": 2,
+      "elapsed_ns": 21575667,
+      "result": {
+        "lines": 200000,
+        "valid": 193713,
+        "invalid": 6287,
+        "latency_sum": 1521020529,
+        "errors": 19191,
+        "services": {
+          "worker": {
+            "count": 23623,
+            "errors": 2310,
+            "latency_sum": 118226073
+          },
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+            "count": 286,
+            "errors": 0,
+            "latency_sum": 12012
+          },
+          "users": {
+            "count": 23604,
+            "errors": 2292,
+            "latency_sum": 118336668
+          },
+          "notify": {
+            "count": 24087,
+            "errors": 2388,
+            "latency_sum": 120188490
+          },
+          "billing": {
+            "count": 23610,
+            "errors": 2371,
+            "latency_sum": 118015534
+          },
+          "api": {
+            "count": 27224,
+            "errors": 2729,
+            "latency_sum": 689615516
+          },
+          "search": {
+            "count": 23733,
+            "errors": 2398,
+            "latency_sum": 118729746
+          },
+          "gateway": {
+            "count": 23667,
+            "errors": 2333,
+            "latency_sum": 118430711
+          },
+          "auth": {
+            "count": 23879,
+            "errors": 2370,
+            "latency_sum": 119465779
+          }
+        }
+      }
+    }
+  ],
+  "median_elapsed_ns": 21525750,
+  "source": "artifacts/raw/20261113T025336Z-e268b819/rust-scan-noisy-r1",
+  "run_group": "20261113T025336Z-e268b819",
+  "metadata_sha256": "892802f37ed81d1119b6060b2f01d6785e49d3a05d3bd90cf7adf393c4476c8f",
+  "corpus_sha256": "fc6b1f499cce6e227c0176e0908e8727fa08da251812c2332e9205c37e368bd6"
+}

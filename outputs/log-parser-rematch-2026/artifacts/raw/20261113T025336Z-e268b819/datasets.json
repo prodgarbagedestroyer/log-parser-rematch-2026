@@ -1,0 +1,245 @@
+{
+  "seed": 20261113,
+  "lines_per_corpus": 200000,
+  "generator_sha256": "74535d3d07302f1893e134a7ac34e80fc872d8fe8137f67e531291009d18f893",
+  "python_version": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "fixture_version": 1,
+  "corpora": {
+    "mutations.log": {
+      "sha256": "05f54fa99c7490d210d1cc003523f3c19b9cf50c82e16c4e88ea53a9cd6e8fa3",
+      "bytes": 70345,
+      "expected": {
+        "lines": 1200,
+        "valid": 197,
+        "invalid": 1003,
+        "latency_sum": 28105921,
+        "errors": 21,
+        "services": {
+          "api": {
+            "count": 165,
+            "errors": 20,
+            "latency_sum": 26104705
+          },
+          "ai": {
+            "count": 3,
+            "errors": 0,
+            "latency_sum": 84
+          },
+          "ap9i": {
+            "count": 1,
+            "errors": 0,
+            "latency_sum": 999999
+          },
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+            "count": 16,
+            "errors": 0,
+            "latency_sum": 672
+          },
+          "pi": {
+            "count": 2,
+            "errors": 1,
+            "latency_sum": 84
+          },
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+            "count": 7,
+            "errors": 0,
+            "latency_sum": 294
+          },
+          "ap": {
+            "count": 3,
+            "errors": 0,
+            "latency_sum": 1000083
+          }
+        }
+      }
+    },
+    "bom.log": {
+      "sha256": "bf6c7d4e5ae9956158ef426d584004cce603691497f9c560c264fcccd974f723",
+      "bytes": 54,
+      "expected": {
+        "lines": 1,
+        "valid": 0,
+        "invalid": 1,
+        "latency_sum": 0,
+        "errors": 0,
+        "services": {}
+      }
+    },
+    "unterminated-cr.log": {
+      "sha256": "eb012c1d9a2707a6167599506cc19b076149fd8da82fe165e78291020963a8f7",
+      "bytes": 52,
+      "expected": {
+        "lines": 1,
+        "valid": 0,
+        "invalid": 1,
+        "latency_sum": 0,
+        "errors": 0,
+        "services": {}
+      }
+    },
+    "clean.log": {
+      "sha256": "32b40ab5809572a0145b6dff543e23ba0902736a64664c8de92374a2a0764e27",
+      "bytes": 16109234,
+      "expected": {
+        "lines": 200000,
+        "valid": 200000,
+        "invalid": 0,
+        "latency_sum": 1001956218,
+        "errors": 19755,
+        "services": {
+          "users": {
+            "count": 24927,
+            "errors": 2441,
+            "latency_sum": 124270232
+          },
+          "gateway": {
+            "count": 24864,
+            "errors": 2460,
+            "latency_sum": 124358439
+          },
+          "notify": {
+            "count": 24996,
+            "errors": 2422,
+            "latency_sum": 126044187
+          },
+          "billing": {
+            "count": 25336,
+            "errors": 2432,
+            "latency_sum": 126303665
+          },
+          "auth": {
+            "count": 24877,
+            "errors": 2397,
+            "latency_sum": 124471793
+          },
+          "search": {
+            "count": 24991,
+            "errors": 2520,
+            "latency_sum": 125651721
+          },
+          "api": {
+            "count": 24765,
+            "errors": 2538,
+            "latency_sum": 123958001
+          },
+          "worker": {
+            "count": 25244,
+            "errors": 2545,
+            "latency_sum": 126898180
+          }
+        }
+      }
+    },
+    "empty.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "expected": {
+        "lines": 0,
+        "valid": 0,
+        "invalid": 0,
+        "latency_sum": 0,
+        "errors": 0,
+        "services": {}
+      }
+    },
+    "golden.log": {
+      "sha256": "93ded540702790e3382954b31dba476721e1e4b27157663a5f9ed705b0eb7bb7",
+      "bytes": 1966,
+      "expected": {
+        "lines": 35,
+        "valid": 13,
+        "invalid": 22,
+        "latency_sum": 2000377,
+        "errors": 1,
+        "services": {
+          "api": {
+            "count": 12,
+            "errors": 1,
+            "latency_sum": 2000335
+          },
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+            "count": 1,
+            "errors": 0,
+            "latency_sum": 42
+          }
+        }
+      }
+    },
+    "noisy.log": {
+      "sha256": "fc6b1f499cce6e227c0176e0908e8727fa08da251812c2332e9205c37e368bd6",
+      "bytes": 15863379,
+      "expected": {
+        "lines": 200000,
+        "valid": 193713,
+        "invalid": 6287,
+        "latency_sum": 1521020529,
+        "errors": 19191,
+        "services": {
+          "api": {
+            "count": 27224,
+            "errors": 2729,
+            "latency_sum": 689615516
+          },
+          "users": {
+            "count": 23604,
+            "errors": 2292,
+            "latency_sum": 118336668
+          },
+          "gateway": {
+            "count": 23667,
+            "errors": 2333,
+            "latency_sum": 118430711
+          },
+          "worker": {
+            "count": 23623,
+            "errors": 2310,
+            "latency_sum": 118226073
+          },
+          "notify": {
+            "count": 24087,
+            "errors": 2388,
+            "latency_sum": 120188490
+          },
+          "auth": {
+            "count": 23879,
+            "errors": 2370,
+            "latency_sum": 119465779
+          },
+          "billing": {
+            "count": 23610,
+            "errors": 2371,
+            "latency_sum": 118015534
+          },
+          "search": {
+            "count": 23733,
+            "errors": 2398,
+            "latency_sum": 118729746
+          },
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+            "count": 286,
+            "errors": 0,
+            "latency_sum": 12012
+          }
+        }
+      }
+    },
+    "no-final-newline.log": {
+      "sha256": "ebf7ca88e91018f9f6efae17601bcc554e43cbf6dfe3eba4e717f374451d427e",
+      "bytes": 105,
+      "expected": {
+        "lines": 2,
+        "valid": 2,
+        "invalid": 0,
+        "latency_sum": 84,
+        "errors": 1,
+        "services": {
+          "api": {
+            "count": 2,
+            "errors": 1,
+            "latency_sum": 84
+          }
+        }
+      }
+    }
+  }
+}

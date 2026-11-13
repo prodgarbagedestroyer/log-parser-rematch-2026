@@ -1,0 +1,1 @@
+GO111MODULE=off GOCACHE=/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/go-cache go test -bench='^Benchmark(Split|Scan)$' -benchtime=1s -count=1 -run='^$'

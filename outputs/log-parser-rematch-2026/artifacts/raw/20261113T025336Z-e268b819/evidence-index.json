@@ -1,0 +1,229 @@
+{
+  "run_group": "20261113T025336Z-e268b819",
+  "evidence": [
+    {
+      "id": "rust-split-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "rust-scan-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "go-split-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "go-scan-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "java-split-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "java-scan-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "csharp-split-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "csharp-scan-clean-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-clean-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-clean-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-clean-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-clean-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-clean-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "rust-split-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-split-noisy-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "rust-scan-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/rust-scan-noisy-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "go-split-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-split-noisy-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "go-scan-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/go-scan-noisy-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "java-split-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-split-noisy-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "java-scan-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/java-scan-noisy-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "csharp-split-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-split-noisy-r5/stdout.jsonl"
+      ]
+    },
+    {
+      "id": "csharp-scan-noisy-throughput",
+      "metric": "resident_parse_aggregate_throughput",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "formula": "median(line_count*1e9/median(3 pass elapsed_ns)) over 5 fresh processes",
+      "source_files": [
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-noisy-r1/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-noisy-r2/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-noisy-r3/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-noisy-r4/stdout.jsonl",
+        "artifacts/raw/20261113T025336Z-e268b819/csharp-scan-noisy-r5/stdout.jsonl"
+      ]
+    }
+  ]
+}

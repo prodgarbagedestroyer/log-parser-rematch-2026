@@ -1,0 +1,44 @@
+{
+  "lines": 1200,
+  "valid": 197,
+  "invalid": 1003,
+  "latency_sum": 28105921,
+  "errors": 21,
+  "services": {
+    "api": {
+      "count": 165,
+      "errors": 20,
+      "latency_sum": 26104705
+    },
+    "ai": {
+      "count": 3,
+      "errors": 0,
+      "latency_sum": 84
+    },
+    "ap9i": {
+      "count": 1,
+      "errors": 0,
+      "latency_sum": 999999
+    },
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+      "count": 16,
+      "errors": 0,
+      "latency_sum": 672
+    },
+    "pi": {
+      "count": 2,
+      "errors": 1,
+      "latency_sum": 84
+    },
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx": {
+      "count": 7,
+      "errors": 0,
+      "latency_sum": 294
+    },
+    "ap": {
+      "count": 3,
+      "errors": 0,
+      "latency_sum": 1000083
+    }
+  }
+}

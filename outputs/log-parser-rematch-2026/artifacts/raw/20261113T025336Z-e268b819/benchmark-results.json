@@ -1,0 +1,535 @@
+{
+  "status": "measured_native_pilot",
+  "run_group": "20261113T025336Z-e268b819",
+  "metadata_sha256": "892802f37ed81d1119b6060b2f01d6785e49d3a05d3bd90cf7adf393c4476c8f",
+  "aggregates": [
+    {
+      "evidence_id": "rust-split-clean-throughput",
+      "corpus": "clean",
+      "target": "rust",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        5956310.521885078,
+        5947321.657888469,
+        5998822.731039033,
+        6277324.408484583,
+        6036596.868515374
+      ],
+      "median": 5998822.731039033,
+      "min": 5947321.657888469,
+      "max": 6277324.408484583,
+      "stddev": 135618.5750402375,
+      "trial_count": 5,
+      "run_ids": [
+        "rust-split-clean-r1",
+        "rust-split-clean-r2",
+        "rust-split-clean-r3",
+        "rust-split-clean-r4",
+        "rust-split-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        18153472,
+        18186240,
+        18137088,
+        18153472,
+        18169856
+      ]
+    },
+    {
+      "evidence_id": "rust-scan-clean-throughput",
+      "corpus": "clean",
+      "target": "rust",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        9249054.041436594,
+        9478972.629134769,
+        9171349.74891825,
+        9355083.903408758,
+        9212185.418262007
+      ],
+      "median": 9249054.041436594,
+      "min": 9171349.74891825,
+      "max": 9478972.629134769,
+      "stddev": 124198.14374696689,
+      "trial_count": 5,
+      "run_ids": [
+        "rust-scan-clean-r1",
+        "rust-scan-clean-r2",
+        "rust-scan-clean-r3",
+        "rust-scan-clean-r4",
+        "rust-scan-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        18120704,
+        18120704,
+        18120704,
+        18120704,
+        18104320
+      ]
+    },
+    {
+      "evidence_id": "go-split-clean-throughput",
+      "corpus": "clean",
+      "target": "go",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        4711439.079620376,
+        4713284.982884884,
+        4719810.458075776,
+        4743101.751390322,
+        4697408.669809891
+      ],
+      "median": 4713284.982884884,
+      "min": 4697408.669809891,
+      "max": 4743101.751390322,
+      "stddev": 16716.347556637003,
+      "trial_count": 5,
+      "run_ids": [
+        "go-split-clean-r1",
+        "go-split-clean-r2",
+        "go-split-clean-r3",
+        "go-split-clean-r4",
+        "go-split-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        40386560,
+        40140800,
+        40189952,
+        40189952,
+        40353792
+      ]
+    },
+    {
+      "evidence_id": "go-scan-clean-throughput",
+      "corpus": "clean",
+      "target": "go",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        4030006.785725426,
+        3984410.991993824,
+        4020571.89941486,
+        3993567.0025296453,
+        4040614.9686682634
+      ],
+      "median": 4020571.89941486,
+      "min": 3984410.991993824,
+      "max": 4040614.9686682634,
+      "stddev": 23982.510062060217,
+      "trial_count": 5,
+      "run_ids": [
+        "go-scan-clean-r1",
+        "go-scan-clean-r2",
+        "go-scan-clean-r3",
+        "go-scan-clean-r4",
+        "go-scan-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        33488896,
+        33521664,
+        33570816,
+        33538048,
+        33456128
+      ]
+    },
+    {
+      "evidence_id": "java-split-clean-throughput",
+      "corpus": "clean",
+      "target": "java",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        3135373.6777541316,
+        3128160.7620625044,
+        3124585.0160525553,
+        3141233.798105051,
+        3140777.4994699936
+      ],
+      "median": 3135373.6777541316,
+      "min": 3124585.0160525553,
+      "max": 3141233.798105051,
+      "stddev": 7464.658863459368,
+      "trial_count": 5,
+      "run_ids": [
+        "java-split-clean-r1",
+        "java-split-clean-r2",
+        "java-split-clean-r3",
+        "java-split-clean-r4",
+        "java-split-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        154877952,
+        152682496,
+        152698880,
+        151257088,
+        156057600
+      ]
+    },
+    {
+      "evidence_id": "java-scan-clean-throughput",
+      "corpus": "clean",
+      "target": "java",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        7977423.890390196,
+        7958100.600339214,
+        7958786.8548537735,
+        7970151.78157799,
+        7973912.229792521
+      ],
+      "median": 7970151.78157799,
+      "min": 7958100.600339214,
+      "max": 7977423.890390196,
+      "stddev": 8814.003053227314,
+      "trial_count": 5,
+      "run_ids": [
+        "java-scan-clean-r1",
+        "java-scan-clean-r2",
+        "java-scan-clean-r3",
+        "java-scan-clean-r4",
+        "java-scan-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        134250496,
+        134217728,
+        134922240,
+        134152192,
+        134758400
+      ]
+    },
+    {
+      "evidence_id": "csharp-split-clean-throughput",
+      "corpus": "clean",
+      "target": "csharp",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        6569180.034948038,
+        6601270.084364232,
+        6410770.093757513,
+        6729135.474319937,
+        6618199.386492917
+      ],
+      "median": 6601270.084364232,
+      "min": 6410770.093757513,
+      "max": 6729135.474319937,
+      "stddev": 114832.21856213457,
+      "trial_count": 5,
+      "run_ids": [
+        "csharp-split-clean-r1",
+        "csharp-split-clean-r2",
+        "csharp-split-clean-r3",
+        "csharp-split-clean-r4",
+        "csharp-split-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        101335040,
+        101351424,
+        101498880,
+        101302272,
+        101482496
+      ]
+    },
+    {
+      "evidence_id": "csharp-scan-clean-throughput",
+      "corpus": "clean",
+      "target": "csharp",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        8479175.145841813,
+        8394402.612338092,
+        8426374.552348852,
+        8402655.239055542,
+        8298755.186721992
+      ],
+      "median": 8402655.239055542,
+      "min": 8298755.186721992,
+      "max": 8479175.145841813,
+      "stddev": 65675.03821735673,
+      "trial_count": 5,
+      "run_ids": [
+        "csharp-scan-clean-r1",
+        "csharp-scan-clean-r2",
+        "csharp-scan-clean-r3",
+        "csharp-scan-clean-r4",
+        "csharp-scan-clean-r5"
+      ],
+      "peak_rss_bytes": [
+        101810176,
+        101728256,
+        101908480,
+        101908480,
+        101974016
+      ]
+    },
+    {
+      "evidence_id": "rust-split-noisy-throughput",
+      "corpus": "noisy",
+      "target": "rust",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        5972177.119842932,
+        6322211.509586053,
+        6279171.8550940445,
+        5824168.4703631075,
+        6265189.756778128
+      ],
+      "median": 6265189.756778128,
+      "min": 5824168.4703631075,
+      "max": 6322211.509586053,
+      "stddev": 221292.44480222228,
+      "trial_count": 5,
+      "run_ids": [
+        "rust-split-noisy-r1",
+        "rust-split-noisy-r2",
+        "rust-split-noisy-r3",
+        "rust-split-noisy-r4",
+        "rust-split-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        17907712,
+        17956864,
+        17940480,
+        17956864,
+        17956864
+      ]
+    },
+    {
+      "evidence_id": "rust-scan-noisy-throughput",
+      "corpus": "noisy",
+      "target": "rust",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        9291197.751530144,
+        9644266.876345888,
+        9263494.305845844,
+        9404351.863824986,
+        9502579.403909845
+      ],
+      "median": 9404351.863824986,
+      "min": 9263494.305845844,
+      "max": 9644266.876345888,
+      "stddev": 156873.3299199736,
+      "trial_count": 5,
+      "run_ids": [
+        "rust-scan-noisy-r1",
+        "rust-scan-noisy-r2",
+        "rust-scan-noisy-r3",
+        "rust-scan-noisy-r4",
+        "rust-scan-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        17907712,
+        17874944,
+        17907712,
+        17874944,
+        17907712
+      ]
+    },
+    {
+      "evidence_id": "go-split-noisy-throughput",
+      "corpus": "noisy",
+      "target": "go",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        4876715.652950286,
+        4866599.452439429,
+        4850866.182792765,
+        4848925.659908476,
+        4851704.616093711
+      ],
+      "median": 4851704.616093711,
+      "min": 4848925.659908476,
+      "max": 4876715.652950286,
+      "stddev": 12170.280113902012,
+      "trial_count": 5,
+      "run_ids": [
+        "go-split-noisy-r1",
+        "go-split-noisy-r2",
+        "go-split-noisy-r3",
+        "go-split-noisy-r4",
+        "go-split-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        40009728,
+        39763968,
+        40058880,
+        40534016,
+        39895040
+      ]
+    },
+    {
+      "evidence_id": "go-scan-noisy-throughput",
+      "corpus": "noisy",
+      "target": "go",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        4154455.769098506,
+        4138455.505230097,
+        4112758.0902218623,
+        4116595.656077699,
+        4128847.541416831
+      ],
+      "median": 4128847.541416831,
+      "min": 4112758.0902218623,
+      "max": 4154455.769098506,
+      "stddev": 16938.2754553521,
+      "trial_count": 5,
+      "run_ids": [
+        "go-scan-noisy-r1",
+        "go-scan-noisy-r2",
+        "go-scan-noisy-r3",
+        "go-scan-noisy-r4",
+        "go-scan-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        32833536,
+        32784384,
+        32784384,
+        32735232,
+        32866304
+      ]
+    },
+    {
+      "evidence_id": "java-split-noisy-throughput",
+      "corpus": "noisy",
+      "target": "java",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        2922047.074558237,
+        2912573.6269487157,
+        2903646.11859388,
+        2889907.179793769,
+        2877654.6976087065
+      ],
+      "median": 2903646.11859388,
+      "min": 2877654.6976087065,
+      "max": 2922047.074558237,
+      "stddev": 17690.72205832203,
+      "trial_count": 5,
+      "run_ids": [
+        "java-split-noisy-r1",
+        "java-split-noisy-r2",
+        "java-split-noisy-r3",
+        "java-split-noisy-r4",
+        "java-split-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        247545856,
+        247660544,
+        246235136,
+        247152640,
+        246317056
+      ]
+    },
+    {
+      "evidence_id": "java-scan-noisy-throughput",
+      "corpus": "noisy",
+      "target": "java",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        7747371.2394647375,
+        7619156.4641399635,
+        7740612.08890093,
+        7747696.270936939,
+        7807759.835805934
+      ],
+      "median": 7747371.2394647375,
+      "min": 7619156.4641399635,
+      "max": 7807759.835805934,
+      "stddev": 68972.24907055257,
+      "trial_count": 5,
+      "run_ids": [
+        "java-scan-noisy-r1",
+        "java-scan-noisy-r2",
+        "java-scan-noisy-r3",
+        "java-scan-noisy-r4",
+        "java-scan-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        221970432,
+        221528064,
+        221904896,
+        221773824,
+        221315072
+      ]
+    },
+    {
+      "evidence_id": "csharp-split-noisy-throughput",
+      "corpus": "noisy",
+      "target": "csharp",
+      "variant": "split",
+      "unit": "lines/s",
+      "trial_values": [
+        4448843.856702739,
+        4499032.707967787,
+        6909011.769501549,
+        6848681.79997055,
+        6912522.0336639825
+      ],
+      "median": 6848681.79997055,
+      "min": 4448843.856702739,
+      "max": 6912522.0336639825,
+      "stddev": 1323733.0858973286,
+      "trial_count": 5,
+      "run_ids": [
+        "csharp-split-noisy-r1",
+        "csharp-split-noisy-r2",
+        "csharp-split-noisy-r3",
+        "csharp-split-noisy-r4",
+        "csharp-split-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        100483072,
+        100761600,
+        100974592,
+        100876288,
+        100810752
+      ]
+    },
+    {
+      "evidence_id": "csharp-scan-noisy-throughput",
+      "corpus": "noisy",
+      "target": "csharp",
+      "variant": "scan",
+      "unit": "lines/s",
+      "trial_values": [
+        8230012.386168641,
+        8173440.405402645,
+        8280202.036929701,
+        8105369.807497467,
+        8278111.431657981
+      ],
+      "median": 8230012.386168641,
+      "min": 8105369.807497467,
+      "max": 8280202.036929701,
+      "stddev": 74487.1480341353,
+      "trial_count": 5,
+      "run_ids": [
+        "csharp-scan-noisy-r1",
+        "csharp-scan-noisy-r2",
+        "csharp-scan-noisy-r3",
+        "csharp-scan-noisy-r4",
+        "csharp-scan-noisy-r5"
+      ],
+      "peak_rss_bytes": [
+        101023744,
+        101056512,
+        101203968,
+        101253120,
+        100958208
+      ]
+    }
+  ]
+}

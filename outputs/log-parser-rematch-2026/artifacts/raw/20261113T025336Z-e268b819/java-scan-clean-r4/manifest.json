@@ -1,0 +1,188 @@
+{
+  "run_id": "java-scan-clean-r4",
+  "target": "java",
+  "variant": "scan",
+  "corpus": "clean",
+  "trial": 4,
+  "ts_utc": "2026-11-13T02:54:16.833293+00:00",
+  "command": [
+    "/opt/homebrew/opt/openjdk/bin/java",
+    "-cp",
+    "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+    "Main",
+    "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+    "scan",
+    "5",
+    "3"
+  ],
+  "exit_code": 0,
+  "process_elapsed_ms": 366.98120800429024,
+  "peak_rss_bytes": 134152192,
+  "correctness": true,
+  "rows": [
+    {
+      "pass": 0,
+      "elapsed_ns": 25166542,
+      "result": {
+        "lines": 200000,
+        "valid": 200000,
+        "invalid": 0,
+        "latency_sum": 1001956218,
+        "errors": 19755,
+        "services": {
+          "search": {
+            "count": 24991,
+            "errors": 2520,
+            "latency_sum": 125651721
+          },
+          "auth": {
+            "count": 24877,
+            "errors": 2397,
+            "latency_sum": 124471793
+          },
+          "api": {
+            "count": 24765,
+            "errors": 2538,
+            "latency_sum": 123958001
+          },
+          "worker": {
+            "count": 25244,
+            "errors": 2545,
+            "latency_sum": 126898180
+          },
+          "notify": {
+            "count": 24996,
+            "errors": 2422,
+            "latency_sum": 126044187
+          },
+          "gateway": {
+            "count": 24864,
+            "errors": 2460,
+            "latency_sum": 124358439
+          },
+          "users": {
+            "count": 24927,
+            "errors": 2441,
+            "latency_sum": 124270232
+          },
+          "billing": {
+            "count": 25336,
+            "errors": 2432,
+            "latency_sum": 126303665
+          }
+        }
+      }
+    },
+    {
+      "pass": 1,
+      "elapsed_ns": 25093625,
+      "result": {
+        "lines": 200000,
+        "valid": 200000,
+        "invalid": 0,
+        "latency_sum": 1001956218,
+        "errors": 19755,
+        "services": {
+          "search": {
+            "count": 24991,
+            "errors": 2520,
+            "latency_sum": 125651721
+          },
+          "auth": {
+            "count": 24877,
+            "errors": 2397,
+            "latency_sum": 124471793
+          },
+          "api": {
+            "count": 24765,
+            "errors": 2538,
+            "latency_sum": 123958001
+          },
+          "worker": {
+            "count": 25244,
+            "errors": 2545,
+            "latency_sum": 126898180
+          },
+          "notify": {
+            "count": 24996,
+            "errors": 2422,
+            "latency_sum": 126044187
+          },
+          "gateway": {
+            "count": 24864,
+            "errors": 2460,
+            "latency_sum": 124358439
+          },
+          "users": {
+            "count": 24927,
+            "errors": 2441,
+            "latency_sum": 124270232
+          },
+          "billing": {
+            "count": 25336,
+            "errors": 2432,
+            "latency_sum": 126303665
+          }
+        }
+      }
+    },
+    {
+      "pass": 2,
+      "elapsed_ns": 24860708,
+      "result": {
+        "lines": 200000,
+        "valid": 200000,
+        "invalid": 0,
+        "latency_sum": 1001956218,
+        "errors": 19755,
+        "services": {
+          "search": {
+            "count": 24991,
+            "errors": 2520,
+            "latency_sum": 125651721
+          },
+          "auth": {
+            "count": 24877,
+            "errors": 2397,
+            "latency_sum": 124471793
+          },
+          "api": {
+            "count": 24765,
+            "errors": 2538,
+            "latency_sum": 123958001
+          },
+          "worker": {
+            "count": 25244,
+            "errors": 2545,
+            "latency_sum": 126898180
+          },
+          "notify": {
+            "count": 24996,
+            "errors": 2422,
+            "latency_sum": 126044187
+          },
+          "gateway": {
+            "count": 24864,
+            "errors": 2460,
+            "latency_sum": 124358439
+          },
+          "users": {
+            "count": 24927,
+            "errors": 2441,
+            "latency_sum": 124270232
+          },
+          "billing": {
+            "count": 25336,
+            "errors": 2432,
+            "latency_sum": 126303665
+          }
+        }
+      }
+    }
+  ],
+  "median_elapsed_ns": 25093625,
+  "source": "artifacts/raw/20261113T025336Z-e268b819/java-scan-clean-r4",
+  "run_group": "20261113T025336Z-e268b819",
+  "metadata_sha256": "892802f37ed81d1119b6060b2f01d6785e49d3a05d3bd90cf7adf393c4476c8f",
+  "corpus_sha256": "32b40ab5809572a0145b6dff543e23ba0902736a64664c8de92374a2a0764e27"
+}

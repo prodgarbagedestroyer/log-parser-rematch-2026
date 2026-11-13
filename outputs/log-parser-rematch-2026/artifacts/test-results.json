@@ -1,0 +1,1093 @@
+{
+  "tests": [
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":6625,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n{\"pass\":1,\"elapsed_ns\":4542,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":134791,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":132333,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":1292,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":625,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":792,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":375,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":42,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":42,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":42,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":41,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":34194791,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439}}}}\n{\"pass\":1,\"elapsed_ns\":33877792,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "split",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":32229292,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711}}}}\n{\"pass\":1,\"elapsed_ns\":32128000,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":3625,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42},\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335}}}}\n{\"pass\":1,\"elapsed_ns\":3166,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":74917,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":74459,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":959,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":542,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":209,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":166,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":41,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":42,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":83,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":0,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":21632458,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793}}}}\n{\"pass\":1,\"elapsed_ns\":21850500,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "rust",
+      "variant": "scan",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-rust",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":20961041,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711}}}}\n{\"pass\":1,\"elapsed_ns\":20835791,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":11250,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n{\"pass\":1,\"elapsed_ns\":9208,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":238125,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672}}}}\n{\"pass\":1,\"elapsed_ns\":232000,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":1583,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":708,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":1292,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":416,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":958,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":125,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":875,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":83,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":42660792,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n{\"pass\":1,\"elapsed_ns\":42617333,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "split",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":41045208,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n{\"pass\":1,\"elapsed_ns\":41146375,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":6875,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n{\"pass\":1,\"elapsed_ns\":8292,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":201792,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672}}}}\n{\"pass\":1,\"elapsed_ns\":171583,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":1667,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":709,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":1542,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":375,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":1083,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":83,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":916,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":41,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":50458000,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n{\"pass\":1,\"elapsed_ns\":50202125,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "go",
+      "variant": "scan",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/parser-go",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":48591292,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n{\"pass\":1,\"elapsed_ns\":49015708,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":377292,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n{\"pass\":1,\"elapsed_ns\":319584,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":2412583,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n{\"pass\":1,\"elapsed_ns\":2195667,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":36250,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":61042,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":23875,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":22584,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":3250,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":4125,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":417,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":584,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":64996375,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665}}}}\n{\"pass\":1,\"elapsed_ns\":63874875,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "split",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":67264792,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534}}}}\n{\"pass\":1,\"elapsed_ns\":65859833,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":265208,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n{\"pass\":1,\"elapsed_ns\":206375,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":1503291,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n{\"pass\":1,\"elapsed_ns\":1044917,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":23042,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":37958,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":10625,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":14125,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":3125,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":4291,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":416,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":542,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":27650750,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665}}}}\n{\"pass\":1,\"elapsed_ns\":25704292,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "java",
+      "variant": "scan",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/opt/openjdk/bin/java",
+        "-cp",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/java",
+        "Main",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":29740709,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534}}}}\n{\"pass\":1,\"elapsed_ns\":28818917,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":16700,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n{\"pass\":1,\"elapsed_ns\":20000,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":861700,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n{\"pass\":1,\"elapsed_ns\":801300,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":3800,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":2000,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":2500,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":1300,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":700,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":300,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":500,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":200,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":149148900,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n{\"pass\":1,\"elapsed_ns\":132477800,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "split",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "split",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":150595700,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n{\"pass\":1,\"elapsed_ns\":156916500,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "golden",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/golden.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":18700,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n{\"pass\":1,\"elapsed_ns\":20600,\"result\":{\"lines\":35,\"valid\":13,\"invalid\":22,\"latency_sum\":2000377,\"errors\":1,\"services\":{\"api\":{\"count\":12,\"errors\":1,\"latency_sum\":2000335},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":1,\"errors\":0,\"latency_sum\":42}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "mutations",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/mutations.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":963600,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n{\"pass\":1,\"elapsed_ns\":928400,\"result\":{\"lines\":1200,\"valid\":197,\"invalid\":1003,\"latency_sum\":28105921,\"errors\":21,\"services\":{\"api\":{\"count\":165,\"errors\":20,\"latency_sum\":26104705},\"ai\":{\"count\":3,\"errors\":0,\"latency_sum\":84},\"ap9i\":{\"count\":1,\"errors\":0,\"latency_sum\":999999},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":16,\"errors\":0,\"latency_sum\":672},\"pi\":{\"count\":2,\"errors\":1,\"latency_sum\":84},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":7,\"errors\":0,\"latency_sum\":294},\"ap\":{\"count\":3,\"errors\":0,\"latency_sum\":1000083}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "no-final-newline",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/no-final-newline.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":3900,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n{\"pass\":1,\"elapsed_ns\":2200,\"result\":{\"lines\":2,\"valid\":2,\"invalid\":0,\"latency_sum\":84,\"errors\":1,\"services\":{\"api\":{\"count\":2,\"errors\":1,\"latency_sum\":84}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "unterminated-cr",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/unterminated-cr.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":2100,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":1300,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "bom",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/bom.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":800,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":300,\"result\":{\"lines\":1,\"valid\":0,\"invalid\":1,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "empty",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/empty.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":600,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n{\"pass\":1,\"elapsed_ns\":200,\"result\":{\"lines\":0,\"valid\":0,\"invalid\":0,\"latency_sum\":0,\"errors\":0,\"services\":{}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "clean",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/clean.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":27457600,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n{\"pass\":1,\"elapsed_ns\":24489700,\"result\":{\"lines\":200000,\"valid\":200000,\"invalid\":0,\"latency_sum\":1001956218,\"errors\":19755,\"services\":{\"users\":{\"count\":24927,\"errors\":2441,\"latency_sum\":124270232},\"gateway\":{\"count\":24864,\"errors\":2460,\"latency_sum\":124358439},\"notify\":{\"count\":24996,\"errors\":2422,\"latency_sum\":126044187},\"billing\":{\"count\":25336,\"errors\":2432,\"latency_sum\":126303665},\"auth\":{\"count\":24877,\"errors\":2397,\"latency_sum\":124471793},\"search\":{\"count\":24991,\"errors\":2520,\"latency_sum\":125651721},\"api\":{\"count\":24765,\"errors\":2538,\"latency_sum\":123958001},\"worker\":{\"count\":25244,\"errors\":2545,\"latency_sum\":126898180}}}}\n",
+      "stderr": ""
+    },
+    {
+      "target": "csharp",
+      "variant": "scan",
+      "fixture": "noisy",
+      "passed": true,
+      "command": [
+        "/opt/homebrew/bin/dotnet",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/csharp/Parser.dll",
+        "/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/datasets/noisy.log",
+        "scan",
+        "1",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"pass\":0,\"elapsed_ns\":161053100,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n{\"pass\":1,\"elapsed_ns\":157597500,\"result\":{\"lines\":200000,\"valid\":193713,\"invalid\":6287,\"latency_sum\":1521020529,\"errors\":19191,\"services\":{\"api\":{\"count\":27224,\"errors\":2729,\"latency_sum\":689615516},\"users\":{\"count\":23604,\"errors\":2292,\"latency_sum\":118336668},\"gateway\":{\"count\":23667,\"errors\":2333,\"latency_sum\":118430711},\"worker\":{\"count\":23623,\"errors\":2310,\"latency_sum\":118226073},\"notify\":{\"count\":24087,\"errors\":2388,\"latency_sum\":120188490},\"auth\":{\"count\":23879,\"errors\":2370,\"latency_sum\":119465779},\"billing\":{\"count\":23610,\"errors\":2371,\"latency_sum\":118015534},\"search\":{\"count\":23733,\"errors\":2398,\"latency_sum\":118729746},\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\":{\"count\":286,\"errors\":0,\"latency_sum\":12012}}}}\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true
+}

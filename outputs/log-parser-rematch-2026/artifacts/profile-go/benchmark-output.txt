@@ -1,0 +1,7 @@
+goos: darwin
+goarch: arm64
+cpu: Apple M4
+BenchmarkSplit-10    	      27	  42141988 ns/op	51200510 B/op	  800010 allocs/op
+BenchmarkScan-10     	      24	  49668717 ns/op	 1356592 B/op	  200010 allocs/op
+PASS
+ok  	_/Users/hrirks/video-gen/prod.garbagedestroyer/projects/log-parser-rematch-2026/build/go-profile	3.443s

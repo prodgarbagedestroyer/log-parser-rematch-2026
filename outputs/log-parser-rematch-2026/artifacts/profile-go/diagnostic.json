@@ -1,0 +1,19 @@
+{
+  "status": "single_separate_diagnostic",
+  "rows": {
+    "split": {
+      "ns_per_pass": 42141988,
+      "bytes_per_pass": 51200510,
+      "allocations_per_pass": 800010
+    },
+    "scan": {
+      "ns_per_pass": 49668717,
+      "bytes_per_pass": 1356592,
+      "allocations_per_pass": 200010
+    }
+  },
+  "source": "benchmark-output.txt",
+  "unit_note": "B/op means cumulative allocated bytes per full corpus pass, not resident memory",
+  "corpus": "clean",
+  "source_sha256": "aecf08c4cdf1b57390ff8399bb21b19323ee7183e6a9a880a5e5922e05226f4b"
+}

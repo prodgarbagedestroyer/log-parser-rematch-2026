@@ -1,0 +1,196 @@
+{
+  "charts": [
+    {
+      "key": "clean-rust",
+      "type": "paired-bars",
+      "title": "rust \u2014 clean",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 5998822.731039033,
+          "min": 5947321.657888469,
+          "max": 6277324.408484583,
+          "evidence_id": "rust-split-clean-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 9249054.041436594,
+          "min": 9171349.74891825,
+          "max": 9478972.629134769,
+          "evidence_id": "rust-scan-clean-throughput"
+        }
+      ]
+    },
+    {
+      "key": "clean-go",
+      "type": "paired-bars",
+      "title": "go \u2014 clean",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 4713284.982884884,
+          "min": 4697408.669809891,
+          "max": 4743101.751390322,
+          "evidence_id": "go-split-clean-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 4020571.89941486,
+          "min": 3984410.991993824,
+          "max": 4040614.9686682634,
+          "evidence_id": "go-scan-clean-throughput"
+        }
+      ]
+    },
+    {
+      "key": "clean-java",
+      "type": "paired-bars",
+      "title": "java \u2014 clean",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 3135373.6777541316,
+          "min": 3124585.0160525553,
+          "max": 3141233.798105051,
+          "evidence_id": "java-split-clean-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 7970151.78157799,
+          "min": 7958100.600339214,
+          "max": 7977423.890390196,
+          "evidence_id": "java-scan-clean-throughput"
+        }
+      ]
+    },
+    {
+      "key": "clean-csharp",
+      "type": "paired-bars",
+      "title": "csharp \u2014 clean",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 6601270.084364232,
+          "min": 6410770.093757513,
+          "max": 6729135.474319937,
+          "evidence_id": "csharp-split-clean-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 8402655.239055542,
+          "min": 8298755.186721992,
+          "max": 8479175.145841813,
+          "evidence_id": "csharp-scan-clean-throughput"
+        }
+      ]
+    },
+    {
+      "key": "noisy-rust",
+      "type": "paired-bars",
+      "title": "rust \u2014 noisy",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 6265189.756778128,
+          "min": 5824168.4703631075,
+          "max": 6322211.509586053,
+          "evidence_id": "rust-split-noisy-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 9404351.863824986,
+          "min": 9263494.305845844,
+          "max": 9644266.876345888,
+          "evidence_id": "rust-scan-noisy-throughput"
+        }
+      ]
+    },
+    {
+      "key": "noisy-go",
+      "type": "paired-bars",
+      "title": "go \u2014 noisy",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 4851704.616093711,
+          "min": 4848925.659908476,
+          "max": 4876715.652950286,
+          "evidence_id": "go-split-noisy-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 4128847.541416831,
+          "min": 4112758.0902218623,
+          "max": 4154455.769098506,
+          "evidence_id": "go-scan-noisy-throughput"
+        }
+      ]
+    },
+    {
+      "key": "noisy-java",
+      "type": "paired-bars",
+      "title": "java \u2014 noisy",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 2903646.11859388,
+          "min": 2877654.6976087065,
+          "max": 2922047.074558237,
+          "evidence_id": "java-split-noisy-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 7747371.2394647375,
+          "min": 7619156.4641399635,
+          "max": 7807759.835805934,
+          "evidence_id": "java-scan-noisy-throughput"
+        }
+      ]
+    },
+    {
+      "key": "noisy-csharp",
+      "type": "paired-bars",
+      "title": "csharp \u2014 noisy",
+      "unit": "lines/s",
+      "measurement_kind": "derived",
+      "source_run_group": "20261113T025336Z-e268b819",
+      "series": [
+        {
+          "variant": "split",
+          "value": 6848681.79997055,
+          "min": 4448843.856702739,
+          "max": 6912522.0336639825,
+          "evidence_id": "csharp-split-noisy-throughput"
+        },
+        {
+          "variant": "scan",
+          "value": 8230012.386168641,
+          "min": 8105369.807497467,
+          "max": 8280202.036929701,
+          "evidence_id": "csharp-scan-noisy-throughput"
+        }
+      ]
+    }
+  ]
+}
